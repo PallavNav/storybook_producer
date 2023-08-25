@@ -1,3 +1,8 @@
+Command to create rollup build:
+npx rollup -c --bundleConfigAsCjs
+
+cjs extesion is for commonjs
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
