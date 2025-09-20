@@ -12,15 +12,25 @@ const Template: StoryFn<typeof Button> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   label: "Storybook Primary Button",
-  onClick: () => {
-    console.log("Primary button clicked!");
+};
+Primary.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/X7LZ1XwHO6plDlmKX1WlB0/Buttons-with-360-Variants---autolayout?node-id=1-3", // Make sure this link is public
   },
 };
 
-export const Secondry = Template.bind({});
-Secondry.args = {
-  label: "Storybook Secondry Button",
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  label: "Storybook Secondary Button",
   onClick: () => {
-    console.log("Secondry button clicked!");
+    console.log("Secondary button clicked!");
+  },
+};
+Secondary.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/ABC123XYZ/Design-System?node-id=201-300", // Replace with Secondary button frame
   },
 };
